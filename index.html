@@ -22,7 +22,7 @@
         <span class="btn-text-two">Click Here!</span>
     </button>   
      <center> <font color="#fff"> <h2 style="font-family: Arial;">  PlingifyPlug V2   </h2> </center></font>
-    <div class="card">
+    <font style="font-family: Arial;">   <div class="card">
         <div class="align">
             <span class="red"></span>
             <span class="yellow"></span>
@@ -30,10 +30,12 @@
         </div>
    
         <h1>Infomation</h1>
-        <p>
+       <font style="color: #000000;"> <p>
             This is site is a easy way to view blocked webiste. Please dont leak this site to building admins or IT Team as it may result in this page being  blocked. This is V2 of PlingifyPlug by the time this is released V1 will be removed from our publisher.
-        </p>
-    </div>
+        </p> </font>
+    </div></font>
+
+
  
    <center> <div id="wifi-loader">
       <svg class="circle-outer" viewBox="0 0 86 86">
@@ -52,10 +54,26 @@
   </div></center>
   >
   
-  <center><font color="#fff"> <h4  style="font-family: Arial;"> Searching For Beta License If Not Found Page Wont Work! </h4> </center></font>
+  
+<center> <font style="color: #fff;"> <h3 style="font-family: Arial;">  Click here to accept terms. </h3> </font>  <label class="container">
+      <input checked="checked" type="checkbox">
+      <div class="checkmark"></div>
+    </label></center>
+
+<h1>
+
+</h1>
+
+   
+  
+
+ <center><font color="#fff"> <h3  style="font-family: Arial;">  Infomation:   </h3>
+
+   <center><font color="#fff"> <p  style="font-family: Arial;">  PlingifyPlug has a free version called PlingifyPlug, you can view all sites we have added. Once we have developt our premium plan you can only see 5 Basic unblocked sites, if you where to buy premium you will be able to view all the sites we have and we will add more. The preimuim version will be cost £0.50 a month, £2 for 6 months or £3.50 for a year. This will be on PC not mobiles we offer no support, reports or help(If you where to buy a subsription but it no longer works as you change device this isnt are fualt please contact WebisteUnblocker@outlook.com and our support team might be able to give you another subscription) WE DONT DO REFUNDS. Our Premuim version will release some time in May, June, July time. This may be canncelled and we keep all our services free butit will be a low chance it will be canncelled! </p> </center></font>
+
 
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for websites..">
-
+  <font style="font-family: Arial;">
   <ul id="myUL">
     <li><a href="#">Spotify</a></li>
     <li><a href="#">Google Doodle PacMan</a></li>
@@ -70,15 +88,102 @@
     <li><a href="#">Tiktok</a></li>
     <li><a href="#">VSCode</a></li>
     <li><a href="#">Python</a></li>
-  </ul>
+  </ul></font>
+<font style="color: #fff;"> <a href="https://www.nationaltrust.org.uk/membership?campid=PPC_Central_Membership_Google_PureBrand&dfaid=1&gclid=475f8e7ff6ce1868f866ea6f65537c9f&gclsrc=3p.ds&msclkid=475f8e7ff6ce1868f866ea6f65537c9f"> <h3 style="font-family: Arial;">   Advert: Nation Trust Click Here For More Infomation!   </a>  </font>
+
+<font style="color: #fff;"> <h3 style="font-family: Arial;">  If you want your advert here please contact WebsiteUnblocker@outlook.com   </h3>     </font>
+  
 
 
-   
-   
-</body>
+  </body>
 
 
 <style> 
+
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/* Hide the default checkbox */
+.container input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+
+.container {
+ display: block;
+ position: relative;
+ cursor: pointer;
+ font-size: 25px;
+ user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+ position: relative;
+ top: 0;
+ left: 0;
+ height: 1.3em;
+ width: 1.3em;
+ background: black;
+ border-radius: 50px;
+ transition: all 0.7s;
+ --spread: 20px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+ background: black;
+ box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+ left: 0.45em;
+ top: 0.25em;
+ width: 0.25em;
+ height: 0.5em;
+ border: solid #f0f0f0;
+ border-width: 0 0.15em 0.15em 0;
+ transform: rotate(45deg);
+}
 
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -376,7 +481,7 @@
 
 
 body {
-        height: 1000px;
+        height: 1115px;
         background: linear-gradient(#000000, #09aad3);
       }
 .check {
