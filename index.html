@@ -44,7 +44,7 @@
           <circle class="front" cx="17" cy="17" r="14"></circle>
       </svg>
   </div></center>
-  >
+  
   
   
 <center> <font style="color: #fff;"> <h3 style="font-family: Arial;">  Click here to accept terms. </h3> </font>  <label class="container">
@@ -63,13 +63,39 @@
 
 
 </h1>
-<left>  <div class="container">
+<left>  <div class="container"> 
 	<div class="loader"></div>
 	<div class="loader"></div>
 	<div class="loader"></div>
 </div></left> 
-  
+
 <h1> ‎ </h1>
+
+<h1> ‎ </h1>
+
+<center>
+  <font style="font-family: Arial;" >
+<!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">What Device We Support!</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2 style="color: #fff;"> What Devices We Support: </h2>
+
+    <h3 style="color: #fff;"> 1.Laptop </h3>
+    <h3 style="color: #fff;"> 1.PC </h3>
+
+<h5 style="color: #fff;"> We would like all users to use a laptop or pc. Our reasoning for this is becuase we use an aspect ratio for te background and layout and on mobile testing and public release version it looks bad and overlays eachother! If you have any issues dont hesistate to contact WebsiteUnblocker@outlook.com-PlingifyPlug IT Support!</h5>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+  </font>
+</center>
+
+
 
 <h1> ‎ </h1>
 
@@ -107,6 +133,75 @@
 
 
 <style> 
+
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #4f29f0;
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+  cursor: arrow;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  border: 3px solid #030000;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #4f29f0;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #ffffff;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #ffffff;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
 
 .loader {
@@ -305,11 +400,11 @@ a:active {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
+  width: 95.5%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
+  margin-bottom: 10px; /* Add some space below the input */
 }
 
 #myUL {
@@ -323,7 +418,7 @@ a:active {
   border: 1px solid #ddd; /* Add a border to all links */
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6; /* Grey background color */
-  padding: 12px; /* Add some padding */
+  padding: 5px; /* Add some padding */
   text-decoration: none; /* Remove default text underline */
   font-size: 18px; /* Increase the font-size */
   color: black; /* Add a black text color */
@@ -664,6 +759,19 @@ body {
 
 
 <script>
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+<script>
+
   function myFunction() {
     // Declare variables
     var input, filter, ul, li, a, i, txtValue;
