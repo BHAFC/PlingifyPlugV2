@@ -98,6 +98,11 @@
 
    <center><font color="#fff"> <p  style="font-family: Arial;">  PlingifyPlug, what is it? PlingifyPlug is a redirection center. If you want to download anything or veiw the site without knowing the URL only the name use this site! Once we make our subscripions we will have 10 free sites and then if you buy our premium plan it will cost £0.50 a month. £2.00 a month or £4.00 a year. We are not held responiable if you lose your product key or forget it. We will offer no refunds. </p> </center></font>
 
+    <input class="URL-input" placeholder="Video URL e.g. https://www.youtube.com/watch?v=MtN1YnoL46Q">
+    <button class="convert-button">Convert</button>
+
+    <h6> ‎ </h6>
+
    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Searth the internet..." type="text" name="text" class="input">
 
   <ul id="myUL">
@@ -160,28 +165,60 @@
 
 
 
+
+<center>
+
 <font style="color: #fff;"> <h3 style="font-family: Arial;">New Advert Coming Soon!<a href="">   Click here for more infomation! </h3>  </a>  </font>
 
 <font style="color: #ffffff;"> <h4 style="font-family: Arial;">  If you want your advert here please contact WebsiteUnblocker@outlook.com   </h4>     </font>
 
 <font style="color: #ffffff;">
 
-<font style="font-family: Arial, Helvetica, sans-serif;"><h3>PlingifyPlugV3 App Devloptment:</h3> </center>
+<font style="font-family: Arial, Helvetica, sans-serif;"><h3>PlingifyPlugV3 App Devloptment:</h3> 
 
 
-  <font style="font-family: Arial, Helvetica, sans-serif;"><h5>1. HTML 0%, 2. CSS 0%, JavaScript 1%</h5> </center>
+  <font style="font-family: Arial, Helvetica, sans-serif;"><h5>1. HTML 0%, 2. CSS 0%, JavaScript 1%</h5> 
 
- <h3 style="color: #fff;"> Email WebsiteUnblocker@outlook.com for PlingifyPlugV2 App updated manually(APK Android Only IPA Apple support coming in V3 App!) </h3></center>
+ <h3 style="color: #fff;"> Email WebsiteUnblocker@outlook.com for PlingifyPlugV2 App updated manually(APK Android Only IPA Apple support coming in V3 App!) </h3>
 
 
-  </center>
+
 <address style="font-family: Arial;"> This site was made by PlingifyPlug-Copyrighted-UKLAWS2023  </address>
 
   </body></font>
-
+  </center>
 
 <style> 
 
+
+* {
+    text-align: center;
+}
+.heading {
+    font-family: Arial;
+    margin-top:40vh;
+}
+.URL-input, .convert-button {
+    font-size:1.3em;
+    padding:5px 10px;
+}
+.URL-input {
+    border-radius:4px 0px 0px 4px;
+    width: 400px;
+    text-align: left;
+    border:2px solid #0d1563;
+    background: #0d1563;
+    outline:none;
+}
+.URL-input:focus {
+    border:2px solid #b61111ce;
+}
+.convert-button {
+    border-radius:0px 4px 4px 0px;
+    border:2px solid #b61111ce;
+    background: #b61111ce;
+    color:white;
+}
 
 .modal {
   width: 450px;
@@ -203,7 +240,7 @@
   font-size: 17px;
   line-height: 21px;
   text-align: center;
-  color: #2B2B2F;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -823,6 +860,20 @@ body {
 
 
 </style>
+
+
+<script src='script.js'>
+var convertBtn = document.querySelector('.convert-button');
+var URLinput = document.querySelector('.URL-input');
+convertBtn.addEventListener('click', () => {
+    console.log(`URL: ${URLinput.value}`);
+    sendURL(URLinput.value);
+});
+function sendURL(URL) {
+    // We will put code here later
+}
+
+</script>
 
 
 
